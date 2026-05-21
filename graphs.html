@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs | MetroMetrics</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- https://www.w3schools.com/htmL/html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+
+    <style>
+        body {
+            background: var(--c4);
+        }
+
+        #thenav {
+            flex-direction: row;
+            gap: 3vw;
+            justify-content: center;
+            padding-bottom: 5px;
+            background-color: #e6d2ac;
+            border-bottom: 2px solid #575a4b;
+            max-height: 8vh;
+        }
+
+        #thenav a {
+            color: #233329;
+            font-size: x-large;
+            margin: 30px 0px 20px 0px;
+        }
+
+        #thenav a:hover {
+            color: #575a4b;
+        }
+
+        #thenav img {
+            height: 50px;
+            margin-left: -2vw;
+            margin-right: 0vw;
+        }
+
+        #thenav h2 {
+            font-size: 30px;
+            margin-right: 60vw;
+            margin-left: -2vw;
+            color: #575a4b;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 1.6vh;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 24px 0 16px;
+        }
+
+        #graphsdiv {
+            max-width: 75%;
+            margin: 0 auto;
+        }
+
+        #boxwrap, #stationswrap, #propertywrap {
+            margin: 0 auto 24px;
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        #boxwrap {
+            width: fit-content;
+        }
+
+        #stationswrap, #propertywrap {
+            width: 100%;
+        }
+
+        #boxplot {
+            display: block;
+            width: 70vw;
+            max-width: 650px;
+            margin: 0 auto;
+            border-radius: 12px;
+        }
+
+        #graphsdiv iframe {
+            display: block;
+            width: 100%;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        #stationsMap {
+            height: 850px;
+        }
+
+        #propertyMap {
+            height: 950px;
+        }
+    </style>
+
+    <nav id="thenav">
+        <img src="assets/logo.png" alt="MetroMetrics Logo">
+        <h2>MetroMetrics</h2>
+        <a href="index.html">Home</a>
+        <a href="data-card.html">Information</a>
+
+    </nav>
+
+    <header>
+        <h1 class="theTitle">Graphs</h1>
+    </header>
+
+    <br><br><br>
+
+    <div id="graphsdiv">
+        <div id="boxwrap">
+            <img id="boxplot" src="graphs/boxplot.png" alt="Boxplot of ridership per borough and separated by payment method.">
+        </div>
+
+        <div id="stationswrap">
+            <iframe id="stationsMap" src="graphs/stationsMap.html" title="Map of NYC Subway Stations"></iframe>
+        </div>
+
+        <div id="propertywrap">
+            <iframe id="propertyMap" src="graphs/newPropertiesMap.html" title="Map of NYC Property Sales"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Information | MetroMetrics</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- https://www.w3schools.com/htmL/html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+
+    <style>
+        
+        #thenav {
+            flex-direction: row;
+            gap: 3vw;
+            justify-content: center;
+            padding-bottom: 5px;
+            /* background-color: #d4a27f; */
+            
+            background-color: #e6d2ac;
+            border-bottom: 2px solid #575a4b;
+
+            max-height: 8vh;
+        }
+
+        #thenav a {
+            color: #233329;
+            font-size: x-large;
+            margin: 30px 0px 20px 0px;
+        }
+
+        #thenav a:hover {
+            color: #575a4b;
+        }
+
+        #thenav img {
+            height: 50px;
+            margin-left: -2vw;
+            margin-right: 0vw;
+        }
+
+        #thenav h2 {
+        font-size: 30px;
+           margin-right: 63vw; 
+           margin-left: -2vw;
+           color: #575a4b;
+           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           padding-top: 1.6vh;
+        }
+
+        p {
+            max-width: 60vw;
+            display: block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        #infotext {
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        #bodylinks {
+            color: #233329;
+        }
+
+        #bodylinks:hover {
+            color: #575a4b;
+        }
+
+    </style>
+
 </head>
 <body>
-    
+    <div id="particles-js"></div>
+
+    <nav id="thenav">
+        <img src="assets/logo.png" alt="MetroMetrics Logo">
+        <h2>MetroMetrics</h2>
+        <a href="index.html">Home</a>
+        <a href="graphs.html">Graphs</a>
+
+    </nav>
+    <br>
+    <header>
+        <h1 class="theTitle" style="font-size:50px;">Background Information</h1>
+    </header>
+
+    <br>
+    <div id="infotext">
+        <h2>General Information</h2>    
+        <p>The Metropolitan Transportation Authority (MTA) in New York City operates one of the largest subway systems in the world, connecting neighborhoods across all five boroughs and supporting millions of daily trips. Because transportation access strongly affects commuting, business activity, and neighborhood development, subway usage is often connected to local housing demand and property values. <br><br>
+
+        This project studies the relationship between subway ridership and residential property prices in New York City. The main questions explored are whether neighborhoods with higher subway ridership tend to have higher property values, whether areas with stronger transit access experience greater sales activity, and how these patterns differ across boroughs.<br><br>
+
+        The analysis found that areas with consistently high subway ridership generally also had higher average property prices and greater sales volume, especially in dense/wealthy parts of Manhattan. However, the relationship was not perfectly consistent across every neighborhood, showing that factors such as income levels, tourism, and local development also influence housing prices beyond transit access alone. </p>
+
+        <br><br><br>
+        <h2>Dataset Information</h2>
+        <p>The property dataset comes from <a href="https://www.kaggle.com/datasets/nelgiriyewithana/new-york-housing-market" target = "_blank" id="bodylinks">Kaggle’s New York Housing Market dataset</a> and contains information about residential property sales across New York City, including sale prices, locations, property types, and transaction details. This dataset was used to analyze housing prices and sales activity across different neighborhoods and boroughs.<br><br>
+
+        The subway dataset comes from <a href="https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-2020-2024/wujg-7c2s/about_data" target = "_blank" id="bodylinks">New York State Open Data’s MTA Subway Hourly Ridership dataset</a> and includes hourly ridership counts for subway stations from 2020 to 2024. The dataset contains station-level ridership data reported by the Metropolitan Transportation Authority and was used to measure transit usage patterns across the city. <br><br>
+
+        Both datasets were cleaned and aggregated in Python using Pandas before being mapped to compare trends between subway usage and  real estate prices.</p>
+        <br><br><br>
+
+    </div>
+
 </body>
 </html>
