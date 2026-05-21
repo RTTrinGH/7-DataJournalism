@@ -1,0 +1,101 @@
+:root {
+    --c1: #233329;
+    --c2: #816C61;
+    --c3: #45050C;
+    --c4: #ebdbbc;
+    --c5: #575a4b;
+    --claudecolor1: #d4a27f;
+    --claudecolor2: #cc785c;
+}
+
+body {
+    background: var(--claudecolor1);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.blureffect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(212, 162, 127, 0.2);
+    z-index: -8;
+}
+
+#allcontent {
+    z-index: 8;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    line-height: 0.95;
+    margin: 0;
+    padding: 1vh 0 0 0;
+    text-decoration: underline #575a4b;
+}
+
+.theTitle {
+    font-size: 500%;
+}
+
+.theSubtitle {
+    font-size: 175%;
+    margin-top: -4vh;
+}
+
+#particles-js {
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c4);
+}
+
+nav {
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#thenav {
+    flex-direction: row;
+}
+
+#myname {
+    text-decoration: none;
+}
+
+/* NOT USING HAMBURGER MENU!!!! */
+
+/* Hamburger Menu ||| Link: https://codepen.io/designcouch/pen/ExvwPY */
+/* START OF COPIED CODE (WITH A FEW SMALL EDITS SHOWN) */
+
+/* END OF COPIED CODE */
+
+.menu {
+    margin-top: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-left: 3.3vw;
+}
+
+.menu a {
+    color: var(--c5);
+    font-size: 2.6vh;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: var(--c3);
+}
